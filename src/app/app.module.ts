@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserTypePipe } from './helpers/user-type.pipe';
 import { HomeWorkStatusPipe } from './helpers/home-work-status.pipe';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserTypePipe,
-    HomeWorkStatusPipe
+    HomeWorkStatusPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
