@@ -62,7 +62,7 @@
             "name": "some comment",
             "courseId": 1,
             "description": "desc",
-            "homeWorkStatus": "enable",
+            "homeWorkStatus": 1,
             "createdOn": "10/28/2021",
             "status": 1
         }

@@ -16,7 +16,7 @@ export interface HomeWork {
     courseId: number;
     classId: number;
     description?: string;
-    homeWorkStatus: string;
+    homeWorkStatus: number;
     createdOn: Date;
     status: number;
 }
