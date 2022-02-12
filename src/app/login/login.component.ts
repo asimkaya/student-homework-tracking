@@ -11,7 +11,9 @@ export class LoginComponent implements OnInit {
   loginForm = new FormGroup({
     username: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required)
-  })
+  });
+  errorText: boolean = false;
+  loading: boolean= false;
 
   constructor(private service: LoginService) { }
 
@@ -19,10 +21,11 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.loginForm.value);
+    this.loading = true;
     this.service.getUsers(this.loginForm.value.username, this.loginForm.value.password).subscribe(x => {
+      this.loading = false;
       if(x.length == 0) {
-        console.log('wrong'); 
+        this.errorText = true;
       } else {
         console.log(x);
       }

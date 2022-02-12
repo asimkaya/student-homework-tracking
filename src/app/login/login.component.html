@@ -5,15 +5,15 @@
             <mat-card-content class="d-flex flex-column p-2">
                 <mat-form-field>
                     <mat-label>Username</mat-label>
-                    <input matInput placeholder="Username" type="text" formControlName="username">
+                    <input matInput placeholder="Username" type="text" formControlName="username" autocomplete="off">
                 </mat-form-field>
 
                 <mat-form-field>
                     <mat-label>Password</mat-label>
                     <input matInput placeholder="Password" type="password" formControlName="password">
                 </mat-form-field>
-
-                <button mat-raised-button color="accent" type="submit" [disabled]="!loginForm.valid">Login</button>
+                <mat-label *ngIf="errorText" class="mb-3 text-danger">Username or Password incorrect!</mat-label>
+                <button mat-raised-button color="accent" type="submit" [disabled]="!loginForm.valid || loading"  [class.spinner]="loading">Login</button>
             </mat-card-content>
         </mat-card>
     </form>

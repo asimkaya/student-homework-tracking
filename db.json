@@ -2,10 +2,10 @@
     "Users": [
         {
             "id": 1,
-            "firstName": "Brynna",
-            "lastName": "asm",
-            "username": "123456",
-            "password": "d82pt4YKMY",
+            "firstName": "Asım",
+            "lastName": "Kaya",
+            "username": "asm",
+            "password": "123456",
             "userType": "0",
             "classId": 1,
             "createdOn": "3/19/2021",
