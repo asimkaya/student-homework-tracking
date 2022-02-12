@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { LoginService } from './login.service';
 
 @Component({
@@ -13,9 +14,9 @@ export class LoginComponent implements OnInit {
     password: new FormControl('', Validators.required)
   });
   errorText: boolean = false;
-  loading: boolean= false;
+  loading: boolean = false;
 
-  constructor(private service: LoginService) { }
+  constructor(private service: LoginService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -25,10 +26,13 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     this.service.getUsers(this.loginForm.value.username, this.loginForm.value.password).subscribe(x => {
       this.loading = false;
-      if(x.length == 0) {
+      if (x.length == 0) {
         this.errorText = true;
+        localStorage.setItem('login', 'false');
       } else {
         console.log(x);
+        localStorage.setItem('login', 'true');
+        this.router.navigate(['home']);
       }
     })
   }
