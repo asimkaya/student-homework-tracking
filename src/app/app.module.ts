@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UserTypePipe } from './helpers/user-type.pipe';
 import { HomeWorkStatusPipe } from './helpers/home-work-status.pipe';
 import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
