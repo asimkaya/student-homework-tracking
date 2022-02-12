@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    this.errorText = false;
     this.loading = true;
     this.service.getUsers(this.loginForm.value.username, this.loginForm.value.password).subscribe(x => {
       this.loading = false;
