@@ -1,1 +1,20 @@
-<p>login works!</p>
+<div class="main-div w-100 h-100 d-flex justify-content-center align-items-center bg-dark">
+    <form [formGroup]="loginForm" style="width: 300px;" (ngSubmit)="onSubmit()">
+        <mat-card class="mat-elevation-z5">
+            <mat-card-header class="justify-content-center fw-bold" style="font-size: 20px; color: #ff4081">LOGIN</mat-card-header>
+            <mat-card-content class="d-flex flex-column p-2">
+                <mat-form-field>
+                    <mat-label>Username</mat-label>
+                    <input matInput placeholder="Username" type="text" formControlName="username">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password" type="password" formControlName="password">
+                </mat-form-field>
+
+                <button mat-raised-button color="accent" type="submit" [disabled]="!loginForm.valid">Login</button>
+            </mat-card-content>
+        </mat-card>
+    </form>
+</div>
