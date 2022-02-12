@@ -18,7 +18,7 @@ export interface HomeWork {
     description?: string;
     homeWorkStatus: string;
     createdOn: Date;
-    status: string;
+    status: number;
 }
 
 export interface Classes {
@@ -26,7 +26,7 @@ export interface Classes {
     name: string;
     description?: string;
     createdOn: Date;
-    status: string;
+    status: number;
 }
 
 export interface Courses {

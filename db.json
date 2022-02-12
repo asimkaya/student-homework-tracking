@@ -1,9 +1,85 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+    "Users": [
+        {
+            "id": 1,
+            "firstName": "Brynna",
+            "lastName": "Knappitt",
+            "username": "bknappitt0",
+            "password": "d82pt4YKMY",
+            "userType": "0",
+            "classId": 1,
+            "createdOn": "3/19/2021",
+            "status": "1"
+        },
+        {
+            "id": 2,
+            "firstName": "Zarla",
+            "lastName": "Porson",
+            "username": "zporson1",
+            "password": "yuAL5NCQNz",
+            "userType": "0",
+            "classId": 2,
+            "createdOn": "5/17/2021",
+            "status": "1"
+        },
+        {
+            "id": 3,
+            "firstName": "Clair",
+            "lastName": "Burvill",
+            "username": "cburvill2",
+            "password": "dcLooLqUHr",
+            "userType": "0",
+            "classId": 3,
+            "createdOn": "4/9/2021",
+            "status": "1"
+        },
+        {
+            "id": 4,
+            "firstName": "Mackenzie",
+            "lastName": "Barca",
+            "username": "mbarca3",
+            "password": "64MOQnikLtW",
+            "userType": "0",
+            "classId": 4,
+            "createdOn": "5/4/2021",
+            "status": "1"
+        },
+        {
+            "id": 5,
+            "firstName": "Minnnie",
+            "lastName": "Yousef",
+            "username": "myousef4",
+            "password": "zpiFiBSZ",
+            "userType": "1",
+            "classId": 5,
+            "createdOn": "10/28/2021",
+            "status": "1"
+        }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
+    "HomeWork": [
+        {
+            "id": 1,
+            "name": "some comment",
+            "courseId": 1,
+            "description": "desc",
+            "homeWorkStatus": "enable",
+            "createdOn": "10/28/2021",
+            "status": 1
+        }
     ],
-    "profile": { "name": "typicode" }
-  }
+    "Classes": [{
+        "id": 1,
+        "name": "9-B",
+        "description": "desc",
+        "createdOn": "10/28/2021",
+        "status": 1
+    }],
+    "Courses": [
+        {
+            "id": 1,
+            "name": "Matematik",
+            "createdOn": "10/28/2021",
+            "status": 1
+        }
+    ]
+}
