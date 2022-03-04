@@ -4,7 +4,7 @@ export interface Users {
     lastName: string;
     username: string;
     password: string;
-    userType: number;
+    userType: string;
     classId: number;
     createdOn: Date;
     status: number;
@@ -34,4 +34,11 @@ export interface Courses {
     name: string;
     createdOn: Date;
     status: number;
+}
+
+export interface LoginUser {
+    username: string;
+    usertype: string;
+    firstName: string;
+    lastName: string;
 }

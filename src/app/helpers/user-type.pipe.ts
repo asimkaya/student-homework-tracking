@@ -13,6 +13,9 @@ export class UserTypePipe implements PipeTransform {
       case 1:
         return "Öğrenci";
         break;
+      case 2: 
+        return "Admin";
+        break;
       default:
         return "Unknown"
         break;
