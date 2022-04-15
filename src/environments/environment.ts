@@ -4,7 +4,16 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://my-json-server.typicode.com/asimkaya/student-homework-tracking/'
+  apiUrl: 'https://my-json-server.typicode.com/asimkaya/student-homework-tracking/',
+  firebase: {
+    apiKey: "AIzaSyDnAtXOopGGYFKi6R1cAhkihbCQfrT6jbY",
+    authDomain: "nglogin-1084d.firebaseapp.com",
+    projectId: "nglogin-1084d",
+    storageBucket: "nglogin-1084d.appspot.com",
+    messagingSenderId: "464756235491",
+    appId: "1:464756235491:web:15d2273339eb74a25439d6",
+    measurementId: "G-JSM536CN3M"
+  }
 };
 
 /*

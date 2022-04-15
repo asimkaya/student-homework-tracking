@@ -9,6 +9,12 @@ export interface Users {
     createdOn: Date;
     status: number;
 }
+export interface User {
+    uid: string;
+    email: string;
+    displayName: string;
+    photoURL: string;
+}
 
 export interface HomeWork {
     id: number;
